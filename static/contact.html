@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Veldin Solutions</title>
+        <link rel="stylesheet" href="static/css/styles.css">
+        <link rel="icon" type="image/png" href="static/images/logo1.png">
+        <style>
+            /* Sticky Header */
+            header {
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                background-color: #2a2a2a;
+                padding: 10px 20px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            header .logo img {
+                max-height: 50px;
+            }
+
+            nav {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+            }
+
+            nav a {
+                color: #cccccc;
+                text-decoration: none;
+                font-size: 1em;
+                font-weight: 500;
+                transition: color 0.3s ease;
+            }
+
+            nav a.active,
+            nav a:hover {
+                color: #f5f5f5;
+                font-weight: bold;
+            }
+
+            /* Page Layout */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #1f1f1f;
+                color: #fff;
+                margin: 0;
+                padding: 0;
+            }
+
+            /* Get in Touch Section */
+            #contact-section {
+                background-color: #2a2a2a;
+                padding: 40px 20px;
+                color: #ffffff;
+                text-align: center;
+            }
+
+            #contact-section h2 {
+                margin-bottom: 30px;
+                font-size: 2em;
+            }
+
+            .contact-box-container {
+                display: flex;
+                justify-content: center;
+                gap: 20px; /* Reduced gap to make boxes closer */
+                flex-wrap: wrap;
+            }
+
+            .contact-box {
+                flex: 1;
+                min-width: 300px;
+                max-width: 400px;
+                background-color: #1f1f1f;
+                border: 1px solid #444;
+                border-radius: 10px;
+                padding: 20px;
+                text-align: center;
+            }
+
+            #contact-section h3 {
+                margin-bottom: 15px;
+            }
+
+            /* Map Section */
+            #map-section {
+                padding: 40px 20px;
+                background-color: #1f1f1f;
+            }
+
+            #map-section h2 {
+                color: #ffffff;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            #map-section iframe {
+                border: 0;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="static/images/logo-horizontal.png" alt="Veldin Solutions" style="width: 150px; height: auto;">
+            </div>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/services">Services</a>
+                <a href="/contact" class="active">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Get in Touch Section -->
+        <section id="contact-section">
+            <h2>Contact us and get your sample and estimate!</h2>
+            <div class="contact-box-container">
+                <div class="contact-box">
+                    <h3>ADDRESS <img src="static/images/portugal.png" alt="Portuguese Flag" style="width: 20px; height: auto;"></h3>
+                    <br> </br>
+                    <p>Portugal, Paços de Ferreira</p>
+                    <p>Ferreira, Rua de S.Salvador</p>
+                    <br> </br>
+                </div>
+                <div class="contact-box">
+                    <h3>PHONE <img src="static/images/portugal.png" alt="Portuguese Flag" style="width: 20px; height: auto;"><br></br></h3>
+                    <p>+351 918846867</p>
+                </div>
+                <div class="contact-box">
+                    <h3>EMAIL <img src="static/images/europe.png" alt="Portuguese Flag" style="width: 20px; height: auto;"><br></br></h3>
+                    <p>veldin-solutions@gmail.com</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section id="map-section">
+            <h2>OUR LOCATION</h2>
+            <div style="display: flex; justify-content: center;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.213816060704!2d-8.3710975!3d41.2629276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDEuMjYyOTI3NiwtOC4zNzEwOTc1!5e0!3m2!1sen!2sus!4v1693401201234"
+                    width="600"
+                    height="400"
+                    style="border:0; border-radius: 8px;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </body>
+</html>
