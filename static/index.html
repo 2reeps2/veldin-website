@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veldin Solutions</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="icon" type="image/png" href="static/images/logo1.png">
+    <style>
+        /* Sticky Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Ensure it stays above other elements */
+            background-color: #2a2a2a; /* Retain the header background color */
+            padding: 10px 20px; /* Adjust padding for better spacing */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add slight shadow for better visibility */
+        }
+
+        header .logo img {
+            max-height: 50px; /* Keep the logo a consistent size */
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        nav a {
+            color: #cccccc; /* Light gray for links */
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a.active,
+        nav a:hover {
+            color: #f5f5f5; /* Highlight active/hovered links */
+            font-weight: bold;
+        }
+
+        /* Footer Buttons Section */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            padding: 2em 1em;
+            background-color: #2a2a2a; /* Match other sections */
+        }
+
+        .button-box {
+            background-color: #1f1f1f;
+            padding: 20px;
+            border: 1px solid #444444; /* Light gray border for buttons */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            width: 200px;
+            text-align: center;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .button-box:hover {
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .button-box p {
+            margin-bottom: 15px;
+            font-size: 1em;
+            color: #cccccc; /* Light gray */
+        }
+
+        .contact-button a {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 1em;
+            color: #1f1f1f;
+            background-color: #f5f5f5; /* Light gray/white accent color */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-button a:hover {
+            background-color: #e0e0e0; /* Slightly darker shade of light gray */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="static/images/logo-horizontal.png" alt="Veldin Solutions" style="width: 150px; height: auto;">
+        </div>
+        <nav>
+            <a href="/" class="active">Home</a>
+            <a href="/services">Services</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Image Slider Section -->
+    <section class="slider">
+        <div class="slide active">
+            <img src="static/images/pic1.jpg" alt="Furniture Restoration 1">
+        </div>
+        <div class="slide">
+            <img src="static/images/2.jpg" alt="Furniture Restoration 2">
+        </div>
+        <div class="slide">
+            <img src="static/images/3.jpg" alt="Furniture Restoration 3">
+        </div>
+        <!-- Navigation buttons for slider -->
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <p>At Veldin Solutions, we specialize in refurbishing all types of furniture with a high level of expertise and dedication. Our team brings years of experience to each project, ensuring quality and satisfaction in every piece we restore.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="services-container">
+            <a href="/contact" class="service-box">
+                <img src="static/images/chair1.webp" alt="Disaster Restoration">
+                <div class="service-content">
+                    <h3>Insurance Claims Disaster Restoration</h3>
+                    <p>At a fraction of the cost, let the disaster restoration pros restore your policyholder’s cabinets and furniture.</p>
+                </div>
+            </a>
+            <a href="/contact" class="service-box">
+                <img src="static/images/chair2.webp" alt="Commercial Services">
+                <div class="service-content">
+                    <h3>Commercial Services</h3>
+                    <p>Get precision repair and touch-ups or update the look of your business’s furniture with our refinishing service.</p>
+                </div>
+            </a>
+            <a href="/contact" class="service-box">
+                <img src="static/images/chair3.webp" alt="Cabinet Transformation">
+                <div class="service-content">
+                    <h3>Cabinet Transformation Services</h3>
+                    <p>Transform the look of your cabinets at a fraction of the cost of replacement.</p>
+                </div>
+            </a>
+            <a href="/contact" class="service-box">
+                <img src="static/images/chair4.webp" alt="Furniture Repairs">
+                <div class="service-content">
+                    <h3>Furniture Repairs and Restoration</h3>
+                    <p>Get convenient repairs, touch-ups, and more.</p>
+                </div>
+            </a>
+            <a href="/contact" class="service-box">
+                <img src="static/images/chair5.webp" alt="Corporate Account Services">
+                <div class="service-content">
+                    <h3>Corporate Account Services</h3>
+                    <p>Get consistent repair and restoration services across the nation, all under one account.</p>
+                </div>
+            </a>
+            <a href="/contact" class="service-box">
+                <img src="static/images/chair6.webp" alt="On-Site Restoration">
+                <div class="service-content">
+                    <h3>New furniture projects</h3>
+                    <p>Refresh your home or business with new furniture.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Buttons Section -->
+    <section class="footer-buttons">
+        <div class="button-container">
+            <!-- Box 1 -->
+            <div class="button-box">
+                <p>Contact us and get your estimate!</p>
+                <div class="contact-button">
+                    <a href="/contact">Contact Us</a>
+                </div>
+            </div>
+            <!-- Box 2 -->
+            <div class="button-box">
+                <p>See some of our past works!</p>
+                <div class="contact-button">
+                    <a href="/services">Gallery</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
