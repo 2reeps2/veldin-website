@@ -369,7 +369,7 @@
             border-radius: 5px;
             font-size: 1.1rem;
             position: absolute;
-            bottom: 60px; /* Position it above the scroll indicator */
+            bottom: 40px; /* Position it above the scroll indicator */
             left: 50%;
             transform: translateX(-50%); /* Center the button horizontally */
         }
