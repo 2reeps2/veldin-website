@@ -369,9 +369,10 @@
             font-size: 1.1rem;
         }
 
+        /* Scroll Indicator at the bottom */
         .scroll-indicator {
             position: absolute;
-            bottom: 30px;
+            bottom: 20px; /* Adjust distance from the bottom */
             left: 50%;
             transform: translateX(-50%);
             cursor: pointer;
