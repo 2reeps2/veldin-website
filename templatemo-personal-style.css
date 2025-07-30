@@ -353,6 +353,69 @@
         }
 
         /* Floating Shapes */
+        /* Hero Section */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Make the hero section fill the full viewport height */
+            overflow: hidden;
+        }
+
+        .hero-background img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Makes sure the image covers the whole area */
+            z-index: -1; /* Ensures the background image is behind the content */
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white; /* Adjust text color for readability */
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            padding: 1rem 2rem;
+            background-color: #ff7f50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+
+        /* Optional: You can remove any floating shapes-related styles */
+        .floating-shapes {
+            display: none; /* Hide the floating shapes */
+        }
         .floating-shapes {
             position: absolute;
             top: 0;
