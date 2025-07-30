@@ -317,41 +317,6 @@
             transform: scale(1.05);
         }
 
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--gradient-elegant);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-            animation: float 25s ease-in-out infinite;
-            opacity: 0.7;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
-            animation: pulse 4s ease-in-out infinite alternate;
-        }
-
         /* Floating Shapes */
         /* Hero Section */
         .hero {
@@ -415,76 +380,6 @@
         /* Optional: You can remove any floating shapes-related styles */
         .floating-shapes {
             display: none; /* Hide the floating shapes */
-        }
-        .floating-shapes {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .shape {
-            position: absolute;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-        }
-
-        .shape-1 {
-            width: 80px;
-            height: 80px;
-            top: 20%;
-            left: 10%;
-            animation: floatShape1 20s ease-in-out infinite;
-        }
-
-        .shape-2 {
-            width: 120px;
-            height: 120px;
-            top: 60%;
-            right: 15%;
-            background: rgba(255, 255, 255, 0.08);
-            animation: floatShape2 25s ease-in-out infinite reverse;
-        }
-
-        .shape-3 {
-            width: 60px;
-            height: 60px;
-            top: 30%;
-            right: 25%;
-            background: rgba(255, 255, 255, 0.12);
-            animation: floatShape3 18s ease-in-out infinite;
-        }
-
-        .shape-4 {
-            width: 100px;
-            height: 100px;
-            bottom: 25%;
-            left: 20%;
-            background: rgba(255, 255, 255, 0.06);
-            border-radius: 20px;
-            animation: floatShape4 22s ease-in-out infinite;
-        }
-
-        .shape-5 {
-            width: 40px;
-            height: 40px;
-            top: 15%;
-            right: 40%;
-            background: rgba(255, 255, 255, 0.15);
-            animation: floatShape5 16s ease-in-out infinite reverse;
-        }
-
-        .shape-6 {
-            width: 140px;
-            height: 140px;
-            bottom: 15%;
-            right: 10%;
-            background: rgba(255, 255, 255, 0.04);
-            border-radius: 30px;
-            animation: floatShape6 28s ease-in-out infinite;
         }
 
         @keyframes floatShape1 {
