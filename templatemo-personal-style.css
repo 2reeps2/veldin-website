@@ -360,6 +360,7 @@
             margin-bottom: 2rem;
         }
 
+        /* Move the CTA button above the scroll indicator */
         .cta-button {
             padding: 1rem 2rem;
             background-color: #ff7f50;
@@ -367,6 +368,10 @@
             text-decoration: none;
             border-radius: 5px;
             font-size: 1.1rem;
+            position: absolute;
+            bottom: 60px; /* Position it above the scroll indicator */
+            left: 50%;
+            transform: translateX(-50%); /* Center the button horizontally */
         }
 
         /* Scroll Indicator at the bottom */
