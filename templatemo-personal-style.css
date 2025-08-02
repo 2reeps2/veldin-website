@@ -626,7 +626,7 @@
             transform: rotate(0deg) scale(1.02);
         }
 
-        .about-image::before {
+        /* .about-image::before {
             content: '';
             position: absolute;
             top: 0;
@@ -643,7 +643,7 @@
 
         .about-image::after {
 
-        }
+        } */
 
         .about-text h3 {
             font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
