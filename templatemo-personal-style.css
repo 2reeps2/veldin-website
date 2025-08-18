@@ -825,7 +825,7 @@
 
         /* Contact Section */
         .contact {
-            background: url("your-image.jpg") center/cover no-repeat;
+            background: url("images/2.jpeg") center/cover no-repeat;
             color: var(--text-light);
             position: relative;
             overflow: hidden;
@@ -860,7 +860,7 @@
             gap: 2rem;
             margin-top: 3rem;
         }
-        
+
         .contact-form {
             display: grid;
             gap: 2rem;
