@@ -189,13 +189,6 @@
             letter-spacing: -0.5px;
         }
 
-        .logo .subtitle {
-            font-size: 8px;
-            font-weight: normal;
-            margin-top: 2px;
-            color: #555;
-        }
-
         .nav-links {
             display: flex;
             list-style: none;
