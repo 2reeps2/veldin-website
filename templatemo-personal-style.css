@@ -626,25 +626,6 @@
             transform: rotate(0deg) scale(1.02);
         }
 
-        /* .about-image::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(99, 102, 241, 0.3) 0%, rgba(139, 92, 246, 0.2) 100%);
-            transition: opacity 0.3s ease;
-        }
-
-        .about-image:hover::before {
-            opacity: 0.7;
-        }
-
-        .about-image::after {
-
-        } */
-
         .about-text h3 {
             font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
             font-size: 2.5rem;
@@ -767,7 +748,7 @@
         }
 
         .portfolio-item:hover .portfolio-image::before {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(139, 92, 246, 0.3) 100%);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.3) 100%);
         }
 
         .portfolio-content {
