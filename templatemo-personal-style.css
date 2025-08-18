@@ -942,6 +942,7 @@
         .fade-in.animate {
             opacity: 1;
             transform: translateY(0);
+            color:#000000
         }
 
         .slide-in-left {
