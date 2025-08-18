@@ -747,9 +747,9 @@
             transition: all 0.3s ease;
         }
 
-        .portfolio-item:hover .portfolio-image::before {
+        /* .portfolio-item:hover .portfolio-image::before {
             background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.3) 100%);
-        }
+        } */
 
         .portfolio-content {
             padding: 2rem;
