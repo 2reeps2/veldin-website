@@ -825,7 +825,7 @@
 
         /* Contact Section */
         .contact {
-            background: url("images/2.jpeg") center/cover no-repeat;
+            background: url("images/2.jpg") center/cover no-repeat;
             color: var(--text-light);
             position: relative;
             overflow: hidden;
