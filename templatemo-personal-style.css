@@ -718,7 +718,7 @@
 
         .portfolio-item:hover {
             transform: translateY(-15px);
-            box-shadow: var(--shadow-2xl);
+            /* box-shadow: var(--shadow-2xl); */
         }
 
         .portfolio-image {
