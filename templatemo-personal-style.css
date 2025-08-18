@@ -848,7 +848,7 @@
 
         .contact .section-title {
             color: var(--text-light);
-            background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+            background: linear-gradient(135deg, #000000 0%, #000000 100%);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -881,7 +881,7 @@
 
         .form-group label {
             font-weight: 500;
-            color: rgba(255, 255, 255, 0.9);
+            color: rgba(0, 0, 0, 0.9);
             font-size: 0.9rem;
         }
 
