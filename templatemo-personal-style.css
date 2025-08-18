@@ -826,7 +826,7 @@
         /* Contact Section */
         .contact {
             background: url("images/2.jpg") center/cover no-repeat;
-            color: var(--text-light);
+            color: rgba(0, 0, 0, 0.1);
             position: relative;
             overflow: hidden;
         }
@@ -854,7 +854,7 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* Keep the form styling the same */
+        /* Form styling */
         .contact-form {
             display: grid;
             gap: 2rem;
@@ -904,7 +904,7 @@
         .form-group textarea:focus {
             outline: none;
             background: rgba(255, 255, 255, 0.12);
-            border-color: var(--primary-color);
+            border-color: rgba(0, 0, 0, 0.1);
             box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
         }
 
