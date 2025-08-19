@@ -791,145 +791,33 @@
         }
 
         /* Contact Section */
-        .contact {
-            background: linear-gradient(135deg, #000000 0%, #303030 50%, #555555 100%);
-            color: var(--text-light);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .contact::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="contact-grid" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M 8 0 L 0 0 0 8" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23contact-grid)"/></svg>');
-            animation: contactFloat 30s ease-in-out infinite;
-            opacity: 0.6;
-        }
-
-        .contact::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at 25% 75%, rgba(255, 255, 255, 0.08) 0%, transparent 50%),
-                        radial-gradient(circle at 75% 25%, rgba(255, 255, 255, 0.06) 0%, transparent 50%),
-                        radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
-            animation: contactPulse 6s ease-in-out infinite alternate;
-        }
-
-        /* Contact Section */
-        .contact {
-            background: url("images/2.jpg") center/cover no-repeat;
-            color: rgba(0, 0, 0, 0.1);
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* Remove ::before, ::after and shapes */
-        .contact::before,
-        .contact::after,
-        .contact-floating-shapes {
-            display: none !important;
-        }
-
-        .contact-content {
+       .contact {
+            background: #f0efef; /* simple dark background */
+            color: #fff;
+            padding: 60px 20px;
             text-align: center;
-            max-width: 700px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 10;
         }
 
         .contact .section-title {
-            color: rgba(0, 0, 0, 0.9);
-            background: linear-gradient(135deg, #000000 0%, #000000 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+            font-size: 2rem;
+            margin-bottom: 50px;
+            color: #000000;
         }
 
-        /* Form styling */
-        .contact-form {
-            display: grid;
-            gap: 2rem;
-            margin-top: 3rem;
+        .contact p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+            color: #000000;
         }
 
-        .contact-form {
-            display: grid;
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-        }
-
-        .form-group {
-            display: grid;
-            gap: 0.75rem;
-            text-align: left;
-        }
-
-        .form-group label {
+        .contact a {
+            color: #64b5f6;
+            text-decoration: none;
             font-weight: 500;
-            color: rgba(0, 0, 0, 0.9);
-            font-size: 0.9rem;
         }
 
-        .form-group input,
-        .form-group textarea {
-            padding: 1.2rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 15px;
-            background: rgba(255, 255, 255, 0.08);
-            color: rgba(0, 0, 0, 0.9);
-            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
-            font-size: 1rem;
-            font-weight: 400;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            backdrop-filter: blur(10px);
-            resize: vertical;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            background: rgba(255, 255, 255, 0.12);
-            border-color: rgba(0, 0, 0, 0.1);
-            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
-        }
-
-        .form-group input::placeholder,
-        .form-group textarea::placeholder {
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-        .submit-btn {
-            padding: 1.2rem 3rem;
-            background: var(--gradient-btn);
-            color: var(--text-light);
-            border: none;
-            border-radius: 50px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            margin-top: 1rem;
-            letter-spacing: 0.5px;
-        }
-
-        .submit-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        .contact a:hover {
+            text-decoration: underline;
         }
 
         /* Animation Classes */
